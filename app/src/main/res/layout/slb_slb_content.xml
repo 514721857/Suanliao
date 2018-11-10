@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="#efeff5"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+       android:paddingLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/colorblack"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题："/>
+        <EditText
+            android:id="@+id/slb_title"
+            android:textColor="@color/colorblack"
+            android:text="报价单"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="请输入标题"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorblack"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送货日期："/>
+
+        <EditText
+            android:id="@+id/time_select"
+            android:textColor="@android:color/holo_blue_dark"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="选择日期"/>
+
+        <TextView
+            android:id="@+id/slb_name"
+            android:layout_marginLeft="8dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择客户"/>
+        <LinearLayout
+
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/touch_bg"
+                android:id="@+id/slb_clear"
+                android:layout_marginLeft="8dp"
+
+                android:textSize="13dp"
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:text="清空"/>
+
+            <Button
+                android:background="@drawable/touch_bg"
+                android:id="@+id/slb_save"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="13dp"
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:text="保存"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <View
+
+            android:paddingTop="10dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@android:color/darker_gray"
+            />
+        <com.finance.ymt.sgr.suanliao.view.NoItem
+            android:id="@+id/curtain_with"
+            app:title="窗宽"
+            app:unit="米"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <com.finance.ymt.sgr.suanliao.view.NoItem
+            android:id="@+id/curtain_hight"
+            app:title="窗高"
+            app:unit="米"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.finance.ymt.sgr.suanliao.view.ItemWithText
+            android:id="@+id/curtain_beilu"
+            app:title="倍率"
+            app:unit="倍"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.finance.ymt.sgr.suanliao.view.ItemWithEdit
+            android:id="@+id/curtain_bu_unit"
+            app:title="布单价"
+            app:unit="元/米"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.finance.ymt.sgr.suanliao.view.ItemWithEdit
+            android:id="@+id/curtain_sha_unit"
+            app:title="纱单价"
+            app:unit="元/米"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/lin_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+
+
+<!--        <include
+            layout="@layout/zu_lmg"/>
+
+        <include
+            layout="@layout/zu_pb"/>
+
+        <include
+            layout="@layout/zu_lt"/>
+
+        <include
+            layout="@layout/zu_gs"/>
+
+        <include
+            layout="@layout/zu_pj"/>
+
+        <include
+            layout="@layout/zu_lml"/>
+        <include
+            layout="@layout/zu_byl"/>
+        <include
+            layout="@layout/zu_gc"/>-->
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="添加计算组"/>
+
+        <com.finance.ymt.sgr.suanliao.view.NoItem
+            android:id="@+id/all_num"
+            app:title="数量"
+            app:unit="倍"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.finance.ymt.sgr.suanliao.view.NoItemNoEdit
+            android:id="@+id/all_money"
+            app:title="总额"
+            app:unit="元"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.finance.ymt.sgr.suanliao.view.ItemWithText
+            android:id="@+id/all_bu_discount"
+            app:title="布料折扣"
+            app:unit="%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <com.finance.ymt.sgr.suanliao.view.ItemWithText
+            android:id="@+id/all_pj_discount"
+            app:title="配件折扣"
+            app:unit="%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

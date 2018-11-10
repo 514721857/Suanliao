@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">指道算料宝</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <!-- 算料宝 -->
+
+    <string name="slb_name">算料宝</string>
+    <string name="slb_china_sl">算料</string>
+    <string name="slb_english_sl">Calculating Cloth</string>
+
+    <string name="slb_china_order">订单中心</string>
+    <string name="slb_english_order">Order Center</string>
+
+    <string name="slb_china_my">我的客户</string>
+    <string name="slb_english_my">Customer</string>
+
+    <string name="input_number">输入数值</string>
+    <string name="input_type">输入型号/备注</string>
+
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_slb">SLBActivity</string>
+</resources>

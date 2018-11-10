@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlue"> #0000FF</color>
+
+
+    <color name="gray_color">#4b4b58</color>
+    <color name="item_bg">#FFFFFF</color>
+
+    <color name="colorGray">#B9B9B9</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="trans_bans">#40000000</color>
+    <color name="line_yello">#FFFF00</color>
+
+    <color name="color_gray">#ebebeb</color>
+    <drawable name="trans_ban">#e0000000</drawable>
+    <drawable name="trans">#00000000</drawable>
+    <drawable name="img_selected">#FFFFFF</drawable>
+
+    <color name="pop_text_color">#4ea1f9</color>
+    <color name="pop_unselect_color">#5a85b5</color>
+
+
+</resources>

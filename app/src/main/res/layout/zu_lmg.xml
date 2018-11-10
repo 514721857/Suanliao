@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="罗马杆组"/>
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="删除"/>
+
+    </RelativeLayout>
+
+
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEdit
+        android:id="@+id/lmg_quan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="罗马圈"
+        app:unit="元/个" />
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEdit
+        android:id="@+id/lmg_gang"
+        app:title="杆/轨"
+        app:unit="元/米"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEdit
+        android:id="@+id/lmg_bu"
+        app:title="布带"
+        app:unit="元/米"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

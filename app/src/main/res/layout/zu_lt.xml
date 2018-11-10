@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帘头组"/>
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="删除"/>
+
+    </RelativeLayout>
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEditWithEdit
+
+        android:id="@+id/lt_buliao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="布料"
+        app:unit="米" />
+
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithText
+        android:id="@+id/lt_unit"
+        app:title="布料单价"
+        app:unit="元/米"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEditWithEdit
+        android:id="@+id/lt_guidao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="轨道"
+        app:unit="米" />
+
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithText
+        android:id="@+id/lt_guidaounit"
+        app:title="轨道单价"
+        app:unit="元/米"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEditWithEdit
+        android:id="@+id/lt_hua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="帘头花边"
+        app:unit="米" />
+
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithText
+        android:id="@+id/lt_huaunit"
+        app:title="花边单价"
+        app:unit="元/米"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEditWithEdit
+        android:id="@+id/lt_moshu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="魔术贴"
+        app:unit="米" />
+
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithText
+        android:id="@+id/lt_moshuunit"
+        app:title="魔术贴单价"
+        app:unit="元/米"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithText
+        android:id="@+id/lt_jiagong"
+        app:title="帘头加工"
+        app:unit="元/米"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEditWithEdit
+        android:id="@+id/lt_jiagongunit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="加工费"
+        app:unit="元" />
+
+</LinearLayout>

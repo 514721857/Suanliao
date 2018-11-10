@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view"/>
+
+    <LinearLayout
+
+        android:background="@mipmap/home_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_margin="5sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="10sp"
+            android:orientation="vertical">
+
+            <com.example.sgr.zd3d.widget.EnglishText
+                android:padding="5dp"
+                android:id="@+id/slb_sl"
+                android:background="@mipmap/english_unselect_bg"
+                android:layout_marginTop="2dp"
+                app:etext="@string/slb_english_sl"
+                app:ctext="@string/slb_china_sl"
+                android:layout_width="120dp"
+                android:layout_height="65dp"/>
+
+            <com.example.sgr.zd3d.widget.EnglishText
+                android:padding="5dp"
+                android:id="@+id/slb_order"
+                android:background="@mipmap/english_unselect_bg"
+                android:layout_marginTop="2dp"
+                app:etext="@string/slb_english_order"
+                app:ctext="@string/slb_china_order"
+                android:layout_width="120dp"
+                android:layout_height="65dp"/>
+
+            <com.example.sgr.zd3d.widget.EnglishText
+                android:padding="5dp"
+                android:id="@+id/slb_my"
+                android:background="@mipmap/english_unselect_bg"
+                android:layout_marginTop="2dp"
+                app:etext="@string/slb_english_my"
+                app:ctext="@string/slb_china_my"
+                android:layout_width="120dp"
+                android:layout_height="65dp"/>
+        </LinearLayout>
+
+        <include
+
+            android:id="@+id/slb_slb_content"
+            layout="@layout/slb_slb_content"/>
+
+        <include
+            android:id="@+id/slb_order_content"
+            layout="@layout/slb_order_content"/>
+
+        <include
+            android:id="@+id/slb_my_content"
+            layout="@layout/slb_my_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

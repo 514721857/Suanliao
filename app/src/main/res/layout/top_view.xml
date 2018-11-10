@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/top_bg"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/top_view_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/img_select"
+            android:layout_margin="10dp"
+            android:padding="5px"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:drawablePadding="10dp"
+
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+
+            android:padding="5px"
+            android:text="广州"
+            android:id="@+id/top_view_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="20dp" />
+
+
+
+        <TextView
+            android:textColor="@color/colorblack"
+            android:id="@+id/top_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/image_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:padding="5px"
+
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:drawablePadding="10dp"
+            android:id="@+id/top_view_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:padding="5px"
+            android:visibility="gone"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/img_select"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:text="全选"
+           />
+
+    </FrameLayout>

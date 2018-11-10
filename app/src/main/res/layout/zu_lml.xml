@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="罗马帘组"/>
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="删除"/>
+
+    </RelativeLayout>
+
+
+
+    <com.finance.ymt.sgr.suanliao.view.NoItem
+       android:id="@+id/lml_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="窗宽"
+        app:unit="米" />
+
+    <com.finance.ymt.sgr.suanliao.view.ItemWithText
+        android:id="@+id/lml_height"
+        app:title="窗高"
+        app:unit="米"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.finance.ymt.sgr.suanliao.view.ItemWithEdit
+        android:id="@+id/lml_unit"
+        app:title="罗马帘单价"
+        app:unit="元/²"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

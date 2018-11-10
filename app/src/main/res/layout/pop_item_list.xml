@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <View
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="test"
+        android:id="@+id/shijin_item_text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textSize="15dp"
+        android:singleLine="true"
+        />
+    <!--android:textColor="@color/pop_text_color"-->
+
+</RelativeLayout>
